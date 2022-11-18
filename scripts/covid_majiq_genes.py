@@ -14,9 +14,9 @@ exp_level = {}
 tpm_file = open(tpm_path)
 for line in tpm_file:
     try:
-        if float(line.split()[-2]) >= t2:
+        if float(line.split()[-1]) >= t2:
             exp_level[line.split()[0]] = 'high'
-        elif float(line.split()[-2]) < t1:
+        elif float(line.split()[-1]) < t1:
             exp_level[line.split()[0]] = 'low'
         else:
             exp_level[line.split()[0]] = 'mid'
