@@ -5,7 +5,7 @@ import os
 
 majiq_path = sys.argv[1] #a majiq tsv file
 tpm_path = sys.argv[2] # a _TPM file
-summary_path = sys.argv[3] # a STAR.Lof.final.out file
+summary_path = sys.argv[3] # a STAR.Log.final.out file
 t1 = float(sys.argv[4]) # a threshold for a low expression
 t2 = float(sys.argv[5]) #a treshold for a high expression
 
@@ -14,9 +14,9 @@ exp_level = {}
 tpm_file = open(tpm_path)
 for line in tpm_file:
     try:
-        if float(line.split()[-2]) >= t2:
+        if float(line.split()[-1]) >= t2:
             exp_level[line.split()[0]] = 'high'
-        elif float(line.split()[-2]) < t1:
+        elif float(line.split()[-1]) < t1:
             exp_level[line.split()[0]] = 'low'
         else:
             exp_level[line.split()[0]] = 'mid'
