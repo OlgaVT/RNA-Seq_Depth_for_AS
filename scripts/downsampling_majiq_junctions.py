@@ -3,7 +3,7 @@ from collections import Counter
 import sys
 import os
 
-majiq_path = sys.argv[1]  #a PATH to majiq tsv files with majiq results per sample
+majiq_path = sys.argv[1]  #a PATH to majiq tsv files with majiq results per sample in a glob format, e.g. "/path/to/majiq_tsv/*"
 tpm_path = sys.argv[2]  # a TPM file
 t1 = float(sys.argv[3])  # a low expression threshold 
 t2 = float(sys.argv[4])  # a high expression threshold
@@ -19,9 +19,9 @@ exp_level = {}
 tpm_file = open(tpm_path)
 for line in tpm_file:
     try:
-        if float(line.split()[-2]) >= t2:
+        if float(line.split()[-1]) >= t2:
             exp_level[line.split()[1]] = 'high'
-        elif float(line.split()[-2]) < t1:
+        elif float(line.split()[-1]) < t1:
             exp_level[line.split()[1]] = 'low'
         else:
             exp_level[line.split()[1]] = 'mid'
