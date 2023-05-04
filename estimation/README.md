@@ -1,5 +1,5 @@
-Estimation_on_GTEx.ipynb: the jupyter notebook for the visualisation
+Estimation_GTEx_TCGA.ipynb: the jupyter notebook for the visualisation
 
-hypothalamus_SRR1443713_: the number of genes with AS/junctions found after downsampling of a hypothalamus samples SRR1443713 to 50M, 100M, 150M, and 200M. The file is used in the visualization jupyter notebook.
+*py: the python scripts to produce the input files for the visualization from MAJIQ output
 
-hypothalamus_gtex_: the number number of genes with AS/junctions found in the GTEx hypothalamus samples. The file is used in the visualization jupyter notebook.
+_genes/_junctions: the input files for the visualization from MAJIQ output
