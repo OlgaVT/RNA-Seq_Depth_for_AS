@@ -4,7 +4,12 @@ This is a repository for the paper '200 million reads is the lower bound for com
 
 
 1) Figure1: the visualization jupyter notebook for Figure 1 in the part 'SARS-CoV-2 cohort'. The covid_summary.tsv is at the Zenodo.
-2) Figure3: the visualization jupyter notebook for Figure 3 in the part 'Deep-sequenced cohorts'. The *_summary.tsv files are at the Zenodo.
+2) Figure3: the visualization jupyter notebook for Figure 3 in the part 'Deep-sequenced cohorts'. The X_summary.tsv files are at the Zenodo.
+3) Enrichment: the visualization jupyter notebook for NEASE enrichment analysis. The /Enrichment/Files folder contains the following files:
+   - X_more_than_X.tsv - genes detected exclusevely at 200M reads
+   - _unified - the coordinates of the detected events unified using the DICAST
+   - _nease - the results of the NEASE enrichment analysis
+
 
 downsampling: the visualization jupyter notebook and input files for the part  'Deep-sequenced data sets'
 
