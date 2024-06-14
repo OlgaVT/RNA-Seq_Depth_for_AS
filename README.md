@@ -11,5 +11,5 @@ This is a repository for the paper '200 million reads is the lower bound for com
    - _nease - the results of the NEASE enrichment analysis
 4) Figure4: the visualization Jupyter notebook and the input files for Figure 4 in the part 'Comparison of GTEx and TCGA cohorts with the deep-sequenced cohorts'.
 5) Figure 5: the visualization Jupyter notebook and the input files for Figure 4 in the part 'The cost of AS detection in the deep-sequenced cohorts'.
-6) 5) TableS7: the Jupyter notebook and the input files to calculate the amount of novel junctions
+6) TableS7: the Jupyter notebook and the input files to calculate the amount of novel junctions
 7) Others: TPM.py script for normalizing the raw counts from featureCounts output.
