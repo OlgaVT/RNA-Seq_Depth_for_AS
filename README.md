@@ -2,7 +2,7 @@
 
 This is a repository for the paper 'RNA sequencing depth guidelines for the study of alternative splicing' that contains all codes for visualization and the part of the processed data. The rest of the data: outputs of the MAJIQ analysis and summary files could be downloaded here:
 
-Input files: Zenodo [10.5281/zenodo.11655945]
+Input files (_summary.tsv and MAJIQ results): Zenodo [10.5281/zenodo.11655945]
 
 1) Figure1: the visualization Jupyter notebook for Figure 1 in the part 'SARS-CoV-2 cohort'. The covid_summary.tsv is at the Zenodo.
 The columns of the covid_summary.tsv:
@@ -19,5 +19,4 @@ Phenotype Sample Gene Junction PSI Seq_Depth TPM
    - 
 6) Figure5: the visualization Jupyter notebook and the input files for Figure 5 in the part 'Comparison of GTEx and TCGA cohorts with the deep-sequenced cohorts'.
 7) Figure 6: the visualization Jupyter notebook and the input files for Figure 6 in the part 'The cost of AS detection in the deep-sequenced cohorts'.
-8) TableS7: the Jupyter notebook and the input files to calculate the amount of novel junctions
 9) Others: TPM.py script for normalizing the raw counts from featureCounts output.
