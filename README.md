@@ -16,7 +16,8 @@ Phenotype Sample Gene Junction PSI Seq_Depth TPM
    - X_more_than_X.tsv - genes detected exclusively at 200M reads
    - _unified - the coordinates of the detected events unified using the DICAST
    - _nease - the results of the NEASE enrichment analysis
-6) Figure4: the visualization Jupyter notebook and the input files for Figure 4 in the part 'Comparison of GTEx and TCGA cohorts with the deep-sequenced cohorts'.
-7) Figure 5: the visualization Jupyter notebook and the input files for Figure 4 in the part 'The cost of AS detection in the deep-sequenced cohorts'.
+   - 
+6) Figure5: the visualization Jupyter notebook and the input files for Figure 5 in the part 'Comparison of GTEx and TCGA cohorts with the deep-sequenced cohorts'.
+7) Figure 6: the visualization Jupyter notebook and the input files for Figure 6 in the part 'The cost of AS detection in the deep-sequenced cohorts'.
 8) TableS7: the Jupyter notebook and the input files to calculate the amount of novel junctions
 9) Others: TPM.py script for normalizing the raw counts from featureCounts output.
