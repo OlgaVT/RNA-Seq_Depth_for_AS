@@ -1,3 +1,5 @@
+#The script to produce _junctions files from majiq results
+
 import glob
 from collections import Counter
 import sys
