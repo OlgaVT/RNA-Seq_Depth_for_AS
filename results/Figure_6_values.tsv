@@ -1,0 +1,13 @@
+cohort	kind	curve	baseline	at 200M	missed	missed, %
+GTEx (Hypothalamus)	genes	linear	13176.0	20665.0	7489.0	57.0
+GTEx (Hypothalamus)	genes	quadratic	13176.0	18224.0	5048.0	38.0
+GTEx (Hypothalamus)	genes	downsampled	13176.0	17811.0	4635.0	35.0
+GTEx (Hypothalamus)	junctions	linear	131405.0	246123.0	114717.0	87.0
+GTEx (Hypothalamus)	junctions	quadratic	131405.0	223146.0	91741.0	70.0
+GTEx (Hypothalamus)	junctions	downsampled	131405.0	219835.0	88430.0	67.0
+TCGA (Breast cancer)	genes	linear	11797.0	14733.0	2936.0	25.0
+TCGA (Breast cancer)	genes	quadratic	11797.0	10182.0	-1615.0	-14.0
+TCGA (Breast cancer)	genes	downsampled	11797.0	12771.0	974.0	8.0
+TCGA (Breast cancer)	junctions	linear	145056.0	202883.0	57827.0	40.0
+TCGA (Breast cancer)	junctions	quadratic	145056.0	142698.0	-2357.0	-2.0
+TCGA (Breast cancer)	junctions	downsampled	145056.0	180141.0	35085.0	24.0

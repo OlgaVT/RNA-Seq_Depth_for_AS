@@ -1,0 +1,21 @@
+kind	scope	category	at 50M	at 50M, %	at 300M	at 300M, %	50->100M	50->100M, %	100->150M	100->150M, %	150->200M	150->200M, %	200->250M	200->250M, %	250->300M	250->300M, %
+genes	In 100 subsamples	0<=TPM<0.1	858	7.23	2484	20.94	495	4.17	346	2.92	273	2.3	264	2.23	248	2.09
+genes	In 100 subsamples	0.1<=TPM<0.5	703	13.03	2323	43.07	569	10.55	384	7.12	279	5.17	221	4.1	167	3.1
+genes	In 100 subsamples	0.5<=TPM<1	620	26.05	1437	60.38	383	16.09	171	7.18	122	5.13	75	3.15	66	2.77
+genes	In 100 subsamples	1<=TPM<10	2591	46.53	3975	71.39	709	12.73	310	5.57	159	2.86	117	2.1	89	1.6
+genes	In 100 subsamples	10<=TPM<inf	1225	62.53	1525	77.85	137	6.99	78	3.98	40	2.04	24	1.23	21	1.07
+genes	In at least one subsample	0<=TPM<0.1	2005	16.9	3112	26.23	635	5.35	324	2.73	136	1.15	36	0.3	-24	-0.2
+genes	In at least one subsample	0.1<=TPM<0.5	1970	36.52	2650	49.13	460	8.53	176	3.26	65	1.21	-7	-0.13	-14	-0.26
+genes	In at least one subsample	0.5<=TPM<1	1286	54.03	1554	65.29	185	7.77	62	2.61	15	0.63	8	0.34	-2	-0.08
+genes	In at least one subsample	1<=TPM<10	3765	67.62	4122	74.03	202	3.63	94	1.69	40	0.72	13	0.23	8	0.14
+genes	In at least one subsample	10<=TPM<inf	1381	70.5	1546	78.92	94	4.8	39	1.99	18	0.92	9	0.46	5	0.26
+junctions	In 100 subsamples	0<=TPM<0.1	2502	4.61	9862	18.19	1831	3.38	1520	2.8	1317	2.43	1316	2.43	1376	2.54
+junctions	In 100 subsamples	0.1<=TPM<0.5	2117	3.6	11878	20.22	2507	4.27	2170	3.69	1724	2.94	1660	2.83	1700	2.89
+junctions	In 100 subsamples	0.5<=TPM<1	2018	7.17	7675	27.26	1789	6.36	1280	4.55	957	3.4	841	2.99	790	2.81
+junctions	In 100 subsamples	1<=TPM<10	9075	14.21	20629	32.3	4216	6.6	2661	4.17	1812	2.84	1496	2.34	1369	2.14
+junctions	In 100 subsamples	10<=TPM<inf	4089	15.49	6806	25.78	953	3.61	623	2.36	430	1.63	359	1.36	352	1.33
+junctions	In at least one subsample	0<=TPM<0.1	7472	13.78	13746	25.35	3345	6.17	1832	3.38	829	1.53	276	0.51	-8	-0.01
+junctions	In at least one subsample	0.1<=TPM<0.5	8810	15.0	15880	27.04	4448	7.57	2028	3.45	634	1.08	90	0.15	-130	-0.22
+junctions	In at least one subsample	0.5<=TPM<1	6446	22.9	9598	34.09	2215	7.87	883	3.14	228	0.81	-89	-0.32	-85	-0.3
+junctions	In at least one subsample	1<=TPM<10	19043	29.81	23321	36.51	3399	5.32	956	1.5	80	0.13	-135	-0.21	-22	-0.03
+junctions	In at least one subsample	10<=TPM<inf	5539	20.98	7231	27.38	782	2.96	370	1.4	250	0.95	133	0.5	157	0.59

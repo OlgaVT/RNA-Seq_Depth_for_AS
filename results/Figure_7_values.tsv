@@ -1,0 +1,73 @@
+row	panel	samples	kind	platform	depth_M	euro
+Adipose (post-treatment)	Per gene	Adipose2	genes	NovaSeq 6000 SP	50	0.026116985475886447
+Adipose (post-treatment)	Per gene	Adipose2	genes	NovaSeq 6000 SP	100	0.2536811877558502
+Adipose (post-treatment)	Per gene	Adipose2	genes	NovaSeq 6000 SP	150	0.6709760827407888
+Adipose (post-treatment)	Per gene	Adipose2	genes	NovaSeq 6000 SP	200	1.745271122320302
+Adipose (post-treatment)	Per gene	Adipose2	genes	NovaSeq 6000 SP	250	4.147852147852149
+Adipose (post-treatment)	Per gene	Adipose2	genes	NovaSeq 6000 SP	300	9.125274725274728
+Adipose (post-treatment)	Per gene	Adipose2	genes	NovaSeq 6000 S1	50	0.022116406775822918
+Adipose (post-treatment)	Per gene	Adipose2	genes	NovaSeq 6000 S1	100	0.21482250870654365
+Adipose (post-treatment)	Per gene	Adipose2	genes	NovaSeq 6000 S1	150	0.5681965093729799
+Adipose (post-treatment)	Per gene	Adipose2	genes	NovaSeq 6000 S1	200	1.4779319041614123
+Adipose (post-treatment)	Per gene	Adipose2	genes	NovaSeq 6000 S1	250	3.512487512487514
+Adipose (post-treatment)	Per gene	Adipose2	genes	NovaSeq 6000 S1	300	7.727472527472524
+Adipose (post-treatment)	Per gene	Adipose2	genes	NovaSeq 6000 S4	50	0.009232153078747241
+Adipose (post-treatment)	Per gene	Adipose2	genes	NovaSeq 6000 S4	100	0.0896743447180302
+Adipose (post-treatment)	Per gene	Adipose2	genes	NovaSeq 6000 S4	150	0.2371848739495798
+Adipose (post-treatment)	Per gene	Adipose2	genes	NovaSeq 6000 S4	200	0.6169398907103827
+Adipose (post-treatment)	Per gene	Adipose2	genes	NovaSeq 6000 S4	250	1.466233766233766
+Adipose (post-treatment)	Per gene	Adipose2	genes	NovaSeq 6000 S4	300	3.225714285714285
+Adipose (post-treatment)	Per junction	Adipose2	junctions	NovaSeq 6000 SP	50	0.0025205752885275575
+Adipose (post-treatment)	Per junction	Adipose2	junctions	NovaSeq 6000 SP	100	0.013304920449265376
+Adipose (post-treatment)	Per junction	Adipose2	junctions	NovaSeq 6000 SP	150	0.03421367063573813
+Adipose (post-treatment)	Per junction	Adipose2	junctions	NovaSeq 6000 SP	200	0.08170494125981459
+Adipose (post-treatment)	Per junction	Adipose2	junctions	NovaSeq 6000 SP	250	0.2395983611287438
+Adipose (post-treatment)	Per junction	Adipose2	junctions	NovaSeq 6000 SP	300	0.9827218934911245
+Adipose (post-treatment)	Per junction	Adipose2	junctions	NovaSeq 6000 S1	50	0.0021344756056028164
+Adipose (post-treatment)	Per junction	Adipose2	junctions	NovaSeq 6000 S1	100	0.011266883501834553
+Adipose (post-treatment)	Per junction	Adipose2	junctions	NovaSeq 6000 S1	150	0.02897284825511928
+Adipose (post-treatment)	Per junction	Adipose2	junctions	NovaSeq 6000 S1	200	0.06918944447724186
+Adipose (post-treatment)	Per junction	Adipose2	junctions	NovaSeq 6000 S1	250	0.20289687806567033
+Adipose (post-treatment)	Per junction	Adipose2	junctions	NovaSeq 6000 S1	300	0.8321893491124257
+Adipose (post-treatment)	Per junction	Adipose2	junctions	NovaSeq 6000 S4	50	0.0008910039380953509
+Adipose (post-treatment)	Per junction	Adipose2	junctions	NovaSeq 6000 S4	100	0.004703186836075818
+Adipose (post-treatment)	Per junction	Adipose2	junctions	NovaSeq 6000 S4	150	0.01209426888055704
+Adipose (post-treatment)	Per junction	Adipose2	junctions	NovaSeq 6000 S4	200	0.02888206702481454
+Adipose (post-treatment)	Per junction	Adipose2	junctions	NovaSeq 6000 S4	250	0.08469617404351086
+Adipose (post-treatment)	Per junction	Adipose2	junctions	NovaSeq 6000 S4	300	0.3473846153846153
+Heart (DCM), mean of four samples	Per gene	J26675+J26676+J26677+J26678	genes	NovaSeq 6000 SP	50	0.023595199127114018
+Heart (DCM), mean of four samples	Per gene	J26675+J26676+J26677+J26678	genes	NovaSeq 6000 SP	100	0.19447989976228672
+Heart (DCM), mean of four samples	Per gene	J26675+J26676+J26677+J26678	genes	NovaSeq 6000 SP	150	0.47651565145037744
+Heart (DCM), mean of four samples	Per gene	J26675+J26676+J26677+J26678	genes	NovaSeq 6000 SP	200	0.7346397133631173
+Heart (DCM), mean of four samples	Per gene	J26675+J26676+J26677+J26678	genes	NovaSeq 6000 SP	250	1.135589743589744
+Heart (DCM), mean of four samples	Per gene	J26675+J26676+J26677+J26678	genes	NovaSeq 6000 SP	300	2.027838827838828
+Heart (DCM), mean of four samples	Per gene	J26675+J26676+J26677+J26678	genes	NovaSeq 6000 S1	50	0.01998090561920349
+Heart (DCM), mean of four samples	Per gene	J26675+J26676+J26677+J26678	genes	NovaSeq 6000 S1	100	0.16468962609927748
+Heart (DCM), mean of four samples	Per gene	J26675+J26676+J26677+J26678	genes	NovaSeq 6000 S1	150	0.4035233695808108
+Heart (DCM), mean of four samples	Per gene	J26675+J26676+J26677+J26678	genes	NovaSeq 6000 S1	200	0.6221081965762817
+Heart (DCM), mean of four samples	Per gene	J26675+J26676+J26677+J26678	genes	NovaSeq 6000 S1	250	0.961641025641026
+Heart (DCM), mean of four samples	Per gene	J26675+J26676+J26677+J26678	genes	NovaSeq 6000 S1	300	1.7172161172161164
+Heart (DCM), mean of four samples	Per gene	J26675+J26676+J26677+J26678	genes	NovaSeq 6000 S4	50	0.008340721040189125
+Heart (DCM), mean of four samples	Per gene	J26675+J26676+J26677+J26678	genes	NovaSeq 6000 S4	100	0.06874714568427463
+Heart (DCM), mean of four samples	Per gene	J26675+J26676+J26677+J26678	genes	NovaSeq 6000 S4	150	0.1684446102200671
+Heart (DCM), mean of four samples	Per gene	J26675+J26676+J26677+J26678	genes	NovaSeq 6000 S4	200	0.2596894767107534
+Heart (DCM), mean of four samples	Per gene	J26675+J26676+J26677+J26678	genes	NovaSeq 6000 S4	250	0.4014222222222221
+Heart (DCM), mean of four samples	Per gene	J26675+J26676+J26677+J26678	genes	NovaSeq 6000 S4	300	0.7168253968253967
+Heart (DCM), mean of four samples	Per junction	J26675+J26676+J26677+J26678	junctions	NovaSeq 6000 SP	50	0.0019270946043555724
+Heart (DCM), mean of four samples	Per junction	J26675+J26676+J26677+J26678	junctions	NovaSeq 6000 SP	100	0.01028249622950373
+Heart (DCM), mean of four samples	Per junction	J26675+J26676+J26677+J26678	junctions	NovaSeq 6000 SP	150	0.018432770553737834
+Heart (DCM), mean of four samples	Per junction	J26675+J26676+J26677+J26678	junctions	NovaSeq 6000 SP	200	0.03120666523861598
+Heart (DCM), mean of four samples	Per junction	J26675+J26676+J26677+J26678	junctions	NovaSeq 6000 SP	250	0.057523457226280425
+Heart (DCM), mean of four samples	Per junction	J26675+J26676+J26677+J26678	junctions	NovaSeq 6000 SP	300	0.14261425112061418
+Heart (DCM), mean of four samples	Per junction	J26675+J26676+J26677+J26678	junctions	NovaSeq 6000 S1	50	0.0016319038123589096
+Heart (DCM), mean of four samples	Per junction	J26675+J26676+J26677+J26678	junctions	NovaSeq 6000 S1	100	0.008707431778163563
+Heart (DCM), mean of four samples	Per junction	J26675+J26676+J26677+J26678	junctions	NovaSeq 6000 S1	150	0.015609253677009202
+Heart (DCM), mean of four samples	Per junction	J26675+J26676+J26677+J26678	junctions	NovaSeq 6000 S1	200	0.026426453511313543
+Heart (DCM), mean of four samples	Per junction	J26675+J26676+J26677+J26678	junctions	NovaSeq 6000 S1	250	0.048712060599133425
+Heart (DCM), mean of four samples	Per junction	J26675+J26676+J26677+J26678	junctions	NovaSeq 6000 S1	300	0.12076871554433505
+Heart (DCM), mean of four samples	Per junction	J26675+J26676+J26677+J26678	junctions	NovaSeq 6000 S4	50	0.000681213090272802
+Heart (DCM), mean of four samples	Per junction	J26675+J26676+J26677+J26678	junctions	NovaSeq 6000 S4	100	0.0036347831686037156
+Heart (DCM), mean of four samples	Per junction	J26675+J26676+J26677+J26678	junctions	NovaSeq 6000 S4	150	0.0065158423270040965
+Heart (DCM), mean of four samples	Per junction	J26675+J26676+J26677+J26678	junctions	NovaSeq 6000 S4	200	0.011031315648053156
+Heart (DCM), mean of four samples	Per junction	J26675+J26676+J26677+J26678	junctions	NovaSeq 6000 S4	250	0.020334098788779318
+Heart (DCM), mean of four samples	Per junction	J26675+J26676+J26677+J26678	junctions	NovaSeq 6000 S4	300	0.050413038624693

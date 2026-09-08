@@ -1,0 +1,8 @@
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Inputs that live on Zenodo, not here.
+*_summary.tsv
+comprehensive_splicing_events_mega_table*.tsv
+gencode.v*.annotation.gtf

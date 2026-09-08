@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: If you use this code, please cite the paper below.
+title: Code for "RNA sequencing depth guidelines for the study of alternative splicing"
+type: software
+license: MIT
+repository-code: https://github.com/OlgaVT/RNA-Seq_Depth_for_AS
+authors:
+  - family-names: Chervontseva
+    given-names: Zoe
+  - family-names: Tsoy
+    given-names: Olga
+  - family-names: Hackl
+    given-names: Lena Maria
+  - family-names: Ameling
+    given-names: Sabine
+  - family-names: Franzenburg
+    given-names: Sören
+  - family-names: Hoffmann
+    given-names: Markus
+  - family-names: Liv-Willuth
+    given-names: Lina
+  - family-names: Lee
+    given-names: Hye Kyung
+  - family-names: Knabl
+    given-names: Ludwig
+  - family-names: Furth
+    given-names: Priscilla A.
+  - family-names: Völker
+    given-names: Uwe
+  - family-names: Hennighausen
+    given-names: Lothar
+  - family-names: Baumbach
+    given-names: Jan
+  - family-names: Kacprowski
+    given-names: Tim
+  - family-names: List
+    given-names: Markus
+# Add a preferred-citation block pointing at the article once it has a DOI.
+
+references:
+  - type: data
+    title: Preprocessed MAJIQ results and summary files
+    doi: 10.5281/zenodo.11655945

@@ -1,0 +1,21 @@
+kind	scope	category	at 50M	at 50M, %	at 200M	at 200M, %	50->100M	50->100M, %	100->150M	100->150M, %	150->200M	150->200M, %
+genes	In 100 subsamples	0<=TPM<0.1	1074	10.42	2454	23.82	576	5.59	383	3.72	421	4.09
+genes	In 100 subsamples	0.1<=TPM<0.5	604	9.78	1946	31.49	566	9.16	388	6.28	388	6.28
+genes	In 100 subsamples	0.5<=TPM<1	592	20.96	1463	51.79	435	15.4	242	8.57	194	6.87
+genes	In 100 subsamples	1<=TPM<10	4222	48.14	6399	72.96	1340	15.28	501	5.71	336	3.83
+genes	In 100 subsamples	10<=TPM<inf	2315	72.28	2650	82.73	204	6.37	72	2.25	59	1.84
+genes	In at least one subsample	0<=TPM<0.1	1925	18.68	2702	26.23	517	5.02	250	2.43	10	0.1
+genes	In at least one subsample	0.1<=TPM<0.5	1509	24.42	2167	35.07	454	7.35	184	2.98	20	0.32
+genes	In at least one subsample	0.5<=TPM<1	1239	43.86	1556	55.08	220	7.79	82	2.9	15	0.53
+genes	In at least one subsample	1<=TPM<10	5929	67.6	6543	74.6	431	4.91	155	1.77	28	0.32
+genes	In at least one subsample	10<=TPM<inf	2531	79.02	2668	83.3	85	2.65	26	0.81	26	0.81
+junctions	In 100 subsamples	0<=TPM<0.1	3642	6.58	11194	20.22	2774	5.01	2177	3.93	2601	4.7
+junctions	In 100 subsamples	0.1<=TPM<0.5	2177	3.07	10822	15.25	2842	4.0	2734	3.85	3069	4.32
+junctions	In 100 subsamples	0.5<=TPM<1	2221	4.9	9090	20.06	2717	6.0	2065	4.56	2087	4.61
+junctions	In 100 subsamples	1<=TPM<10	18321	10.26	44402	24.87	11842	6.63	7313	4.1	6926	3.88
+junctions	In 100 subsamples	10<=TPM<inf	10238	15.32	17742	26.56	3580	5.36	2095	3.14	1829	2.74
+junctions	In at least one subsample	0<=TPM<0.1	8661	15.65	12932	23.36	2939	5.31	1275	2.3	57	0.1
+junctions	In at least one subsample	0.1<=TPM<0.5	7869	11.09	13122	18.49	3634	5.12	1638	2.31	-19	-0.03
+junctions	In at least one subsample	0.5<=TPM<1	7217	15.93	10409	22.97	2392	5.28	836	1.85	-36	-0.08
+junctions	In at least one subsample	1<=TPM<10	38921	21.8	48194	27.0	7237	4.05	1840	1.03	196	0.11
+junctions	In at least one subsample	10<=TPM<inf	15363	23.0	18539	27.75	1795	2.69	915	1.37	466	0.7

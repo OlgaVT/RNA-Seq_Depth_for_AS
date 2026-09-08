@@ -1,0 +1,54 @@
+dataset	KEGG pathway	p-adjusted
+Adipose (post-treatment)	SNARE interactions in vesicular transport	0.0055655477871289
+Adipose (post-treatment)	NOD-like receptor signaling pathway	0.0059250611520003
+Adipose (post-treatment)	Herpes simplex infection	0.0102566446872883
+Adipose (post-treatment)	Epstein-Barr virus infection	0.0102787822289509
+Adipose (post-treatment)	TNF signaling pathway	0.0102787822289509
+Adipose (post-treatment)	Toll-like receptor signaling pathway	0.0210095452255469
+Adipose (post-treatment)	Measles	0.024154023385896
+Adipose (post-treatment)	Antigen processing and presentation	0.0261025185819447
+Adipose (post-treatment)	Endocytosis	0.0281357358589758
+Adipose (post-treatment)	mTOR signaling pathway	0.0306021664316689
+Adipose (post-treatment)	Proteasome	0.0306021664316689
+Adipose (pre-treatment)	Citrate cycle (TCA cycle)	0.0051571396675007
+Adipose (pre-treatment)	Propanoate metabolism	0.0051965982863523
+Adipose (pre-treatment)	Apoptosis	0.0058571334990022
+Adipose (pre-treatment)	PI3K-Akt signaling pathway	0.0060931697823414
+Adipose (pre-treatment)	p53 signaling pathway	0.0078183218141564
+Adipose (pre-treatment)	Small cell lung cancer	0.0086633523872701
+Adipose (pre-treatment)	Gastric cancer	0.0106941508538766
+Adipose (pre-treatment)	Pyruvate metabolism	0.0109318044243858
+Adipose (pre-treatment)	Ferroptosis	0.0141717673497025
+Adipose (pre-treatment)	Ras signaling pathway	0.0156501002938445
+Adipose (pre-treatment)	Antigen processing and presentation	0.0180667810036024
+Adipose (pre-treatment)	Prostate cancer	0.0199711092949583
+Adipose (pre-treatment)	VEGF signaling pathway	0.0208045430404889
+Adipose (pre-treatment)	Hepatocellular carcinoma	0.024686012615838
+Adipose (pre-treatment)	Vasopressin-regulated water reabsorption	0.0302481013919165
+Adipose (pre-treatment)	Thyroid hormone signaling pathway	0.0383507644144638
+Adipose (pre-treatment)	Non-small cell lung cancer	0.0397069903218471
+Adipose (pre-treatment)	Valine, leucine and isoleucine degradation	0.0418445158309463
+Adipose (pre-treatment)	Hepatitis B	0.0424296013764658
+Adipose (pre-treatment)	Fatty acid degradation	0.0430643385161547
+Adipose (pre-treatment)	Acute myeloid leukemia	0.0444445833069329
+Hypothalamus	Prion diseases	0.0048442372603408
+Hypothalamus	Phagosome	0.0054530075418475
+Hypothalamus	Gap junction	0.0069728611932446
+Hypothalamus	Oxidative phosphorylation	0.0091730459479054
+Hypothalamus	Adherens junction	0.0226163029193553
+Hypothalamus	Glutamatergic synapse	0.0229249824918705
+Hypothalamus	Insulin secretion	0.0242528514721528
+Hypothalamus	Propanoate metabolism	0.0245241584885726
+Hypothalamus	Fatty acid degradation	0.0247010832930734
+Hypothalamus	Fructose and mannose metabolism	0.0251660814163589
+Hypothalamus	Leishmaniasis	0.0258782565375303
+Hypothalamus	Pancreatic secretion	0.0258782565375303
+Hypothalamus	Glycolysis / Gluconeogenesis	0.0258782565375303
+Hypothalamus	Hippo signaling pathway - multiple species	0.0258782565375303
+Hypothalamus	Valine, leucine and isoleucine degradation	0.0258782565375303
+Hypothalamus	Protein processing in endoplasmic reticulum	0.0268344106674923
+Hypothalamus	Oocyte meiosis	0.0269953375735733
+Hypothalamus	Collecting duct acid secretion	0.0319033334915848
+Hypothalamus	Carbohydrate digestion and absorption	0.0441213526369561
+Hypothalamus	cAMP signaling pathway	0.046323627707792
+Hypothalamus	Human T-cell leukemia virus 1 infection	0.0482426260817943

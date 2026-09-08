@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sequencing Depth Estimator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f8fafc;
+      color: #111827;
+      margin: 0;
+      padding: 1.5rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      align-items: end;
+      margin-bottom: 1rem;
+    }
+    label {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 0.9rem;
+    }
+    input, select, button {
+      padding: 6px 8px;
+      font-size: 0.95rem;
+      border-radius: 6px;
+      border: 1px solid #cbd5e1;
+      box-sizing: border-box;
+    }
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: 500;
+      transition: background 0.2s, transform 0.05s;
+    }
+    button:hover {
+      background: #1d4ed8;
+    }
+    button:active {
+      transform: translateY(1px);
+    }
+    #status {
+      font-size: 0.9rem;
+      color: #6b7280;
+      margin-bottom: 0.5rem;
+    }
+    pre {
+      background: #020617;
+      color: #e5e7eb;
+      padding: 1rem;
+      border-radius: 8px;
+      white-space: pre-wrap;
+      overflow-x: auto;
+      min-height: 120px;
+      font-size: 0.9rem;
+    }
+    .small {
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Sequencing Depth Estimator</h1>
+
+  <div class="grid">
+    <label>
+      Dataset
+      <select id="dataset"></select>
+    </label>
+
+    <label>
+      Type
+      <select id="type"></select>
+    </label>
+
+    <label>
+      Confidence (0–100)
+      <input id="conf" type="number" min="0" max="100" step="1" value="100">
+    </label>
+
+    <label>
+      Percentage to detect (0–100)
+      <input id="pct" type="number" min="0" max="100" step="1" value="70">
+    </label>
+  </div>
+
+  <button id="calc">Calculate</button>
+
+  <div id="status">Loading precomputed coefficients…</div>
+  <pre id="out">Please wait…</pre>
+
+  <p class="small">
+    Uses precomputed coefficients from <code>data/seq_depth_coeffs.json</code>.<br>
+    Depths are in millions of reads (M). For very low requested percentages,
+    it may report that less than the minimal depth is sufficient.
+  </p>
+</main>
+
+<script>
+(async () => {
+  const $ = id => document.getElementById(id);
+  const datasetSel = $("dataset");
+  const typeSel    = $("type");
+  const confEl     = $("conf");
+  const pctEl      = $("pct");
+  const statusEl   = $("status");
+  const outEl      = $("out");
+  const calcBtn    = $("calc");
+
+  function show(msg) {
+    outEl.textContent = msg;
+  }
+
+  let coeffs;
+
+  // Load JSON
+  try {
+    const res = await fetch("data/seq_depth_coeffs.json", { cache: "no-store" });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    coeffs = await res.json();
+    statusEl.textContent = "Coefficients loaded.";
+  } catch (e) {
+    statusEl.textContent = "Failed to load coefficients.";
+    show(String(e));
+    calcBtn.disabled = true;
+    return;
+  }
+
+  const data = coeffs.data || {};
+
+  // Populate dataset select (keys are already human-readable)
+  const datasetNames = Object.keys(data).sort((a, b) => a.localeCompare(b));
+  if (!datasetNames.length) {
+    statusEl.textContent = "No datasets in coefficients JSON.";
+    calcBtn.disabled = true;
+    return;
+  }
+
+  datasetNames.forEach(name => {
+    const opt = document.createElement("option");
+    opt.value = name;
+    opt.textContent = name;
+    datasetSel.appendChild(opt);
+  });
+
+  // Populate type select based on dataset
+  function refreshTypes() {
+    const ds = datasetSel.value;
+    typeSel.innerHTML = "";
+    const dsData = data[ds] || {};
+    const types = Object.keys(dsData); // "Gene" / "Junction"
+    if (!types.length) {
+      const opt = document.createElement("option");
+      opt.value = "";
+      opt.textContent = "(no types)";
+      typeSel.appendChild(opt);
+      typeSel.disabled = true;
+      return;
+    }
+    typeSel.disabled = false;
+    types.sort().forEach(t => {
+      const opt = document.createElement("option");
+      opt.value = t;
+      opt.textContent = (t === "Gene" ? "Genes" : t === "Junction" ? "Junctions" : t);
+      typeSel.appendChild(opt);
+    });
+  }
+
+  datasetSel.addEventListener("change", refreshTypes);
+  refreshTypes();
+
+  function computeScenario(datasetName, typeKey, conf, pct) {
+    const dsData = data[datasetName];
+    if (!dsData) return "Unknown dataset.";
+
+    const typeData = dsData[typeKey];
+    if (!typeData) return `Type '${typeKey}' not available for dataset '${datasetName}'.`;
+
+    const confStr  = String(conf);
+    const scenario = typeData[confStr];
+    if (!scenario) {
+      return "No precomputed coefficients for this confidence (likely no events at this confidence). Try a lower confidence.";
+    }
+
+    const depths = scenario.depths || [];
+    const counts = scenario.counts || [];
+    const coef1  = scenario.coef1 || [];
+    const coef2  = scenario.coef2 || [];
+    const x0     = scenario.x0;
+
+    if (!depths.length || !counts.length) {
+      return "Insufficient data (no counts for this setting).";
+    }
+
+    const [a1, b1]     = coef1;
+    const [a2, b2, c2] = coef2;
+
+    if ([a1, b1, a2, b2, c2].some(v => v === null || Number.isNaN(v))) {
+      return "Coefficients could not be estimated for this setting.";
+    }
+
+    const p = pct / 100.0;
+
+    // If requested fraction below what minimal depth already detects:
+    if (typeof x0 === "number" && p < x0) {
+      const minDepth = depths[0];
+      return [
+        `Dataset: ${datasetName}`,
+        `Type: ${typeKey === "Gene" ? "Genes" : "Junctions"}`,
+        `Confidence: ${conf}`,
+        `Percentage to detect: ${pct}%`,
+        "",
+        `Result:`,
+        `  Less than ${minDepth}M reads is sufficient (requested percentage below what is already detected at minimal depth).`,
+        "",
+        `Depths (M): ${depths.join(", ")}`,
+        `Counts: ${JSON.stringify(counts)}`
+      ].join("\n");
+    }
+
+    const minDepth = Math.round(a2 * p * p + b2 * p + c2);
+    const maxDepth = Math.round(a1 * p + b1);
+
+    return [
+      `Dataset: ${datasetName}`,
+      `Type: ${typeKey === "Gene" ? "Genes" : "Junctions"}`,
+      `Confidence: ${conf}`,
+      `Percentage to detect: ${pct}%`,
+      "",
+      `Result:`,
+      `  Quadratic approximation: ${minDepth}M`,
+      `  Linear approximation:    ${maxDepth}M`,
+      "",
+      `Depths (M): ${depths.join(", ")}`,
+      `Counts: ${JSON.stringify(counts)}`
+    ].join("\n");
+  }
+
+  calcBtn.addEventListener("click", () => {
+    const datasetName = datasetSel.value;
+    const typeKey     = typeSel.value;
+    const conf        = parseInt(confEl.value, 10);
+    const pct         = parseInt(pctEl.value, 10);
+
+    if (!Number.isInteger(conf) || conf < coeffs.meta.confidence_min || conf > coeffs.meta.confidence_max) {
+      show(`Confidence must be an integer between ${coeffs.meta.confidence_min} and ${coeffs.meta.confidence_max}.`);
+      return;
+    }
+    if (!Number.isInteger(pct) || pct < 0 || pct > 100) {
+      show("Percentage must be an integer between 0 and 100.");
+      return;
+    }
+
+    const msg = computeScenario(datasetName, typeKey, conf, pct);
+    show(msg);
+  });
+
+})();
+</script>
+</body>
+</html>
+

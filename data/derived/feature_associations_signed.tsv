@@ -1,0 +1,10 @@
+	log_TPM	PSI	PSI_ext	Gene_type	Compactness	Region	Is_fast_evolving	Is_heart_specific	GC_content
+log_TPM	True	True	True	False	True	False	True	True	True
+PSI	True	True	True	False	True	False	True	True	True
+PSI_ext	True	True	True	False	True	False	True	True	True
+Gene_type	False	False	False	True	False	False	False	False	False
+Compactness	True	True	True	False	True	False	True	True	True
+Region	False	False	False	False	False	True	False	False	False
+Is_fast_evolving	True	True	True	False	True	False	True	True	True
+Is_heart_specific	True	True	True	False	True	False	True	True	True
+GC_content	True	True	True	False	True	False	True	True	True

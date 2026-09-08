@@ -1,0 +1,10 @@
+	log_TPM	PSI	PSI_ext	Gene_type	Compactness	Region	Is_fast_evolving	Is_heart_specific	GC_content
+log_TPM				PC		5'U			
+PSI				PC		CDS			
+PSI_ext				PC		CDS			
+Gene_type	PC	PC	PC		lnc				Oth
+Compactness				lnc		3'U			
+Region	5'U	CDS	CDS		3'U				3'U
+Is_fast_evolving									
+Is_heart_specific									
+GC_content				Oth		3'U			
